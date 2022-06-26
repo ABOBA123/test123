@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>replit</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+        <!-- Шрифт -->
 
-<!-- Шрифт -->
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
 
-<!-- Шрифт -->
-  
-</head>
+        <!-- Шрифт -->
+    </head>
 
-<body>
+    <body>
+        <div class="header">
+            <!-- Сделать меню фиксированным и чтобы оно находилось всегда сверху, где бы мы не находились  -->
+            <img src="./assets/logo.png" />
+            <!-- Исправить путь до логотипа -->
+            <ul>
+                <li>Акции</li>
+                <li>Доставка</li>
+                <li>Вход</li>
+                <li>Личный кабинет</li>
+            </ul>
+        </div>
 
-  <div class="header">
-    <img src="./assets/logo.png" />
-    <ul>
-      <li>Акции</li>
-      <li>Доставка</li>
-      <li>Вход</li>
-      <li>Личный кабинет</li>
-    </ul>
-  </div>
-  <div class="box">
-      <h1>Коробка<br>
-         Шредингера</h1>
-         <p>У нас вы можете выбрать подарки для себя и<br>
-        близких.Так же вы можете заказать<br>
-         корпоративные подарки.</p>
-  </div>
-  <div class="buttn">
-    <h1>Оформить</h1>
-  </div>
-  <script src="script.js"></script>
-</body>
+        <div class="first_slide">
+            <div class="background_slide"></div>
 
+            <div class="box">
+                <!-- Поправить стили, доработать всё как на макете -->
+                <h1>
+                    Коробка<br />
+                    Шредингера
+                </h1>
+                <p>
+                    У нас вы можете выбрать подарки для себя и<br />
+                    близких.Так же вы можете заказать<br />
+                    корпоративные подарки.
+                </p>
+                <button class="buttn">Оформить</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
