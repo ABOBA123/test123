@@ -1,113 +1,138 @@
 body {
-  font-family: "Comfortaa", cursive;
+    font-family: "Comfortaa", cursive;
 
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .first_slide {
-  width: 100%;
-  height: 100vh;
+    width: 100%;
+    height: 100vh;
 
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: center;
+}
 
+.first_slide .desc {
+    border-left: 2px solid white;
+    padding-left: 10px;
 }
 
 .background_slide {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
 
-  filter: brightness(0.4);
+    filter: brightness(0.4);
 
-  background-image: url("./assets/woman-wrapping-christmas-presents-picjumbo-com\ 1.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+    background-image: url("./assets/woman-wrapping-christmas-presents-picjumbo-com\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.outer-header {
+    width: 100%;
+    height: 70px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header {
-  width: 1270px;
-  height: 135px;
+    width: 1270px;
+    height: 100%;
 
-  margin: auto;
-  /* position: fixed; */
+    /* margin: auto; */
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header ul {
-  width: 40%;
+    width: 40%;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .header ul li {
-  list-style: none;
-  font-size: 24px;
+    list-style: none;
+    font-size: 16px;
+}
+
+.header img {
+    height: 50px;
 }
 
 .box {
-  width: 1270px;
-  margin: auto;
+    width: 1270px;
+    margin: auto;
 }
 
 .box h1 {
-  width: 491px;
-  height: 160px;
+    width: 491px;
+    height: 160px;
 
-  font-family: "Comfortaa";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 80px;
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 80px;
 
-  color: #ffffff;
+    color: #ffffff;
 }
 .box p {
-  width: 685px;
-  height: 81px;
-  left: 148px;
-  top: 581px;
+    width: 685px;
+    height: 81px;
+    /* left: 148px;
+    top: 581px; */
 
-  font-family: "Comfortaa";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 27px;
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
 
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .buttn {
-  width: 379px;
-  height: 89px;
+    width: 379px;
+    height: 89px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-  border-radius: 300px;
+    border-radius: 300px;
 
-  margin: 27px;
-  padding: 10px;
+    margin: 27px;
+    padding: 10px;
 
-  color: #f5f5f5;
-  background-color: #db8689;
+    color: #f5f5f5;
+    background-color: #db8689;
 
-  /* Убираем лишние обводки */
-  border: none;
-  outline: none;
+    /* Убираем лишние обводки */
+    border: none;
+    outline: none;
 }
 /* .categories{
   width: 100%;
@@ -118,76 +143,70 @@ body {
   justify-content: center;
   background-color: #db8689;
 } */
-.alls{
-  width: 100%;
-  height: 100vh;
+.alls {
+    width: 100%;
+    height: 100vh;
 
-  /* display: flex;
+    /* display: flex;
   flex-direction: row;
   justify-content: center; */
-  background-color: #000000;
-
+    background-color: #000000;
 }
-.categories h1{
-  width: 445px;
-  height: 80px;
-/* 
+.categories h1 {
+    width: 445px;
+    height: 80px;
+    /* 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center; */
 }
-.icon button{
-  width: 210px;
-  height: 210px;
+.icon button {
+    width: 210px;
+    height: 210px;
 
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
 
-  display: flex;
- align-items: center;
-justify-content: baseline;
+    border-radius: 300px;
 
-  border-radius: 300px;
+    /* margin: 27px; */
 
-  /* margin: 27px; */
-
-
-  /* color: #f5f5f5; */
-  background-color: #db8689;
-padding: 5%;
-
+    /* color: #f5f5f5; */
+    background-color: #db8689;
+    padding: 5%;
 }
 @media (max-width: 1140px) {
-  .header ul li {
-      font-size: 16px;
-  }
+    .header ul li {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 768px) {
-  .header ul li {
-      font-size: 14px;
-  }
+    .header ul li {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
-  .header ul li {
-      font-size: 12px;
-  }
+    .header ul li {
+        font-size: 12px;
+    }
 
-  .header img {
-      /*     background: red; */
-  }
+    .header img {
+        /*     background: red; */
+    }
 }
 
 @media (max-width: 375px) {
-  .header ul li {
-      font-size: 5px;
-  }
+    .header ul li {
+        font-size: 5px;
+    }
 }
 
 @media (max-width: 1140px) {
-  .box h1 {
-      font-size: 16px;
-  }
+    .box h1 {
+        font-size: 16px;
+    }
 }
-
-
