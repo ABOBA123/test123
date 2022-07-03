@@ -134,22 +134,10 @@ body {
     border: none;
     outline: none;
 }
-/* .categories{
-  width: 100%;
-  height: 100vh;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #db8689;
-} */
 .alls {
-    width: 100%;
-    height: 100vh;
-
-    /* display: flex;
-  flex-direction: row;
-  justify-content: center; */
+width: 100%;
+height: 100%;
     background-color: #000000;
 }
 .categories h1 {
@@ -190,10 +178,14 @@ border-radius: 50%;
 /* border: #db8689 5px solid; */
 outline: none;
 }
+
 .a{
     background-image: url(./assets/joystick\ 1.png);
     border: 
     #53CAF9 5px solid;
+
+    display: flex;
+    
 }
 .b{
     background-image: url(./assets/barbell\ 1.png);
