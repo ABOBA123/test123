@@ -135,9 +135,9 @@ body {
     outline: none;
 }
 
-.alls {
-width: 100%;
-height: 100%;
+.second_slide {
+    width: 100%;
+    height: 100%;
     background-color: #000000;
 }
 .categories h1 {
@@ -150,106 +150,61 @@ height: 100%;
     justify-content: center;
 
     margin: auto;
-
-    
 }
-.icon {
+.icons-row {
     width: 100%;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-
 }
-.icon button{
+.icons-row button {
     width: 210px;
     height: 210px;
 
+    margin: auto;
 
-margin: auto;
-
-/* background-image: url(./assets/joystick\ 1.png); */
-padding: 60px;
-margin-bottom: 60px;
-background-position: center;
-background-repeat: no-repeat;
-border-radius: 50%;
-/* border: #db8689 5px solid; */
-outline: none;
-}
-
-.a{
-    background-image: url(./assets/joystick\ 1.png);
-    border: 
-    #53CAF9 5px solid;
+    margin-bottom: 60px;
+    border-radius: 50%;
+    outline: none;
 
     display: flex;
-    
-}
-.b{
-    background-image: url(./assets/barbell\ 1.png);
-    border: 
-    #ffffff 5px solid;
-}
-.c{
-    background-image: url(./assets/cap\ 2.png);
-    border: 
-    #F7D360 5px solid;
-}
-.d{
-    background-image: url(./assets/paint-palette\ 1.png);
-    border: 
-    #FD3C65 5px solid;
-}
-.e{
-    background-image: url(./assets/chef\ 2.png);
-    border: 
-    #CCDCE5 5px solid;
-}
-.f{
-    background-image: url(./assets/chocolate\ 1.png);
-    border: 
-    
-#92563A 5px solid;
-}
-.g{
-    background-image: url(./assets/can\ 2.png);
-    border: 
-    
-#F3C52D 5px solid;
-}
-.h{
-    background-image: url(./assets/book\ 2.png);
-    border: 
-    
-#00EFD1 5px solid;
-}
-.i{
-    background-image: url(./assets/balloons\ 1.png);
-    border: 
-    
-#6FE3FF 5px solid;
-}
-.j{
-    background-image: url(./assets/fireplace\ 1.png);
-    border: 
-    
-#C35F58 5px solid;
-}
-.k{
-    background-image: url(./assets/poinsettia\ 1.png);
-    border: 
-    
-#FF6977 5px solid;
-}
-.l{
-    background-image: url(./assets/wool\ 1.png);
-    border: 
-    
-#EB8CB3 5px solid;
+    align-items: center;
+    justify-content: center;
+
+    background: none;
 }
 
+.icons-row button img {
+    width: 162px;
+    height: 162px;
+}
+
+.icons-row button .barbell_logo {
+    width: 142px;
+    height: 142px;
+}
+
+.icons-row button .cap_logo {
+    width: 163px;
+    height: 163px;
+}
+
+.icons-row .barbell_button {
+    border: 5px solid white;
+}
+
+.icons-row .cap_button {
+    border: 5px solid #f7d360;
+}
+
+.icons-row button {
+    border: 5px solid white;
+}
+
+.icons-row .joystick_button {
+    border: 5px solid #53caf9;
+}
 
 @media (max-width: 1140px) {
     .header ul li {
