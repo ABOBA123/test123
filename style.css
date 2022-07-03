@@ -205,6 +205,37 @@ body {
 .icons-row .joystick_button {
     border: 5px solid #53caf9;
 }
+.icons-row .paint-palette_botton{
+    border: 5px solid #FD3C65;
+}
+.icons-row .chef_botton{
+    border: 5px solid white;
+}
+.icons-row .chocolate_botton{
+    border: 5px solid 
+    #92563A;
+}
+.icons-row .can_botton{
+    border: 5px solid 
+    #F3C52D;
+}
+.icons-row .book_botton{
+    border: 5px solid 
+    #00EFD1;
+}
+.icons-row .balloons_botton{
+    border: 5px solid 
+    
+#6FE3FF;
+}
+.icons-row .book_botton{
+    border: 5px solid 
+    #00EFD1;
+}
+.icons-row .fireplace_botton{
+    border: 5px solid 
+    #C35F58
+}
 
 @media (max-width: 1140px) {
     .header ul li {
