@@ -6,6 +6,44 @@ body {
     box-sizing: border-box;
 }
 
+.popup-block {
+    width: 100%;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    padding: 17px;
+    border-radius: 15px;
+
+    width: 1280px;
+    height: 600px;
+
+    background: white;
+}
+
+.popup-close {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .first_slide {
     width: 100%;
     height: 100vh;
@@ -178,8 +216,6 @@ body {
     justify-content: center;
 
     background: none;
-
-    
 }
 
 .icons-row button img {
@@ -196,41 +232,41 @@ body {
     width: 163px;
     height: 163px;
 }
-.icons-row button .paint-palette_logo{
+.icons-row button .paint-palette_logo {
     width: 140.89px;
     height: 140.89px;
- }
- .icons-row button .chef_logo{
+}
+.icons-row button .chef_logo {
     width: 163.93px;
     height: 163.93px;
- }
- .icons-row button .chocolate_logo{
+}
+.icons-row button .chocolate_logo {
     width: 159.5px;
     height: 159.5px;
- }
- .icons-row button .can_logo{
+}
+.icons-row button .can_logo {
     width: 137.34px;
     height: 155.07px;
- }
- .icons-row button .book_logo{
+}
+.icons-row button .book_logo {
     width: 140px;
     height: 140px;
- }
- .icons-row button .balloons_logo{
+}
+.icons-row button .balloons_logo {
     width: 150.64px;
     height: 150.64px;
- }
- .icons-row button .fireplace_logo{
+}
+.icons-row button .fireplace_logo {
     width: 143.55px;
     height: 143.55px;
- }
- .icons-row button .poinsettia_logo{
+}
+.icons-row button .poinsettia_logo {
     width: 178.1px;
     height: 178.1px;
- }
-.icons-row button .wool_logo{
+}
+.icons-row button .wool_logo {
     width: 140px;
-height: 140px;
+    height: 140px;
 }
 .icons-row .barbell_button {
     border: 5px solid white;
@@ -271,24 +307,22 @@ height: 140px;
 .icons-row .fireplace_botton {
     border: 5px solid #c35f58;
 }
-.icons-row .poinsettia_botton{
-    border: 5px solid 
-    
-#EB8CB3;
+.icons-row .poinsettia_botton {
+    border: 5px solid #eb8cb3;
 }
-.icons-row .wool_botton{
+.icons-row .wool_botton {
     border: 5px solid #c35f58;
 }
-.icons-row button:hover{
+.icons-row button:hover {
     transform: scale(1.1);
     transition: 1s;
 }
-.third-slide{
+.third-slide {
     width: 100%;
     height: 100vh;
     background: #000000;
 }
-.third-header h1{
+.third-header h1 {
     width: 326px;
     height: 80px;
     color: #f5f5f5;
@@ -299,14 +333,14 @@ height: 140px;
 
     margin: auto;
 }
-.third-icons-row{
+.third-icons-row {
     width: 100%;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.third-icons-row button{
+.third-icons-row button {
     width: 268px;
     height: 264px;
     margin: auto;
@@ -320,46 +354,45 @@ height: 140px;
 
     /* background: none; */
     background-repeat: no-repeat;
-background-position: center;
+    background-position: center;
     border-radius: 30%;
 }
-.third-icons-row button:hover{
+.third-icons-row button:hover {
     transform: scale(1.1);
     transition: 1s;
 }
-.icon-namber-one{
+.icon-namber-one {
     background: url(./assets/image-first\ 1.png);
-   border:  #ffffff 5px solid;
+    border: #ffffff 5px solid;
 }
-.icon-namber-two{
+.icon-namber-two {
     background: url(./assets/image-second\ 1.png);
-    border:  #ffffff 5px solid;
+    border: #ffffff 5px solid;
 }
-.icon-namber-three{
+.icon-namber-three {
     background: url(./assets/image-third\ 1.png);
-    border:  #ffffff 5px solid;
+    border: #ffffff 5px solid;
 }
-.icon-namber-four{
+.icon-namber-four {
     background: url(./assets/image-fourth\ 1.png);
-    border:  #ffffff 5px solid;
+    border: #ffffff 5px solid;
 }
-.reaction{
+.reaction {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.reaction p{
-margin: auto;
-display: flex;
-align-items: center;
-justify-content: center;
+.reaction p {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-color: wheat;
+    color: wheat;
 }
 /* .registration{
     background-color: #d41c0e;
 } */
-
 
 @media (max-width: 1140px) {
     .header ul li {

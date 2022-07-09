@@ -22,7 +22,9 @@
         <div class="outer-header">
             <div class="header">
                 <!-- Сделать меню фиксированным и чтобы оно находилось всегда сверху, где бы мы не находились  -->
-               <a href="./pages/register.html"> <img src="./assets/logo.png" /></a>
+                <a href="./src/pages/register.html">
+                    <img src="./assets/logo.png"
+                /></a>
                 <!-- Исправить путь до логотипа -->
                 <ul>
                     <li>Акции</li>
@@ -52,7 +54,7 @@
                     близких.Так же вы можете заказать<br />
                     корпоративные подарки.
                 </p>
-                <button class="buttn">Оформить</button>
+                <button id="button" class="buttn">Оформить</button>
             </div>
         </div>
         <div class="second_slide">
@@ -157,28 +159,74 @@
                 <button class="icon-namber-four"></button>
             </div>
             <div class="reaction">
-                <p class="men-one">Спасибо<br>
-                сотрудникам за<br>
-            работу,понимание,<br>
-        отзывчивость и<br>
-    оперативность в<br>
-решении вопросов.</p>
-                <p>Очень<br>
-             комфортные<br>
-        аудитории</p>
-                <p>Вау! Я не ожидала,<br>
-            что будет так<br>
-        клево,студениты<br>
-    довольны,я тоже</p>
-                <p>Спасибо<br>
-            сотрудникам за<br>
-        работу,понимание,<br>
-    отзывчивость и<br>
-оперативность в<br>
-решении вопросов.</p>
+                <p class="men-one">
+                    Спасибо<br />
+                    сотрудникам за<br />
+                    работу,понимание,<br />
+                    отзывчивость и<br />
+                    оперативность в<br />
+                    решении вопросов.
+                </p>
+                <p>
+                    Очень<br />
+                    комфортные<br />
+                    аудитории
+                </p>
+                <p>
+                    Вау! Я не ожидала,<br />
+                    что будет так<br />
+                    клево,студениты<br />
+                    довольны,я тоже
+                </p>
+                <p>
+                    Спасибо<br />
+                    сотрудникам за<br />
+                    работу,понимание,<br />
+                    отзывчивость и<br />
+                    оперативность в<br />
+                    решении вопросов.
+                </p>
             </div>
         </div>
 
-        <script src="script.js"></script>
+        <script>
+            const button = document.getElementById("button");
+            const body = document.body;
+            button.onclick = function () {
+                let div = document.createElement("div");
+                div.className = "popup-block";
+                div.id = "popup-block";
+
+                let close_div = document.createElement("div");
+                close_div.className = "popup-close";
+                close_div.onclick = function () {
+                    let obj = document.getElementById("popup-block");
+                    obj.remove();
+                };
+
+                let content_div = document.createElement("div");
+                content_div.className = "popup-content";
+                content_div.innerHTML = `
+                    <h1 class="test">Зарегистрируйтесь на сайте</h1>
+
+                `; // --- Здесь пишешь html код
+                content_div.onclick = function (e) {
+                    e.preventDefault();
+                };
+
+                let button_div = document.createElement("button");
+                button_div.innerHTML = "Закрыть";
+                button_div.onclick = function () {
+                    let obj = document.getElementById("popup-block");
+                    obj.remove();
+                };
+
+                div.appendChild(content_div);
+                div.appendChild(close_div);
+                content_div.appendChild(button_div);
+
+                body.appendChild(div);
+            };
+        </script>
     </body>
 </html>
