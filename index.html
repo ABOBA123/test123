@@ -208,11 +208,19 @@
                 content_div.className = "popup-content";
                 content_div.innerHTML = `
                     <h1 class="test">Зарегистрируйтесь на сайте</h1>
-
+                    <div class="searches">
+                <input placeholder="Имя" />
+                <input placeholder="Почта" />
+                <input placeholder="Пароль" />
+                <input
+                    placeholder="Подьвыерждение пароля"
+                />
+            </div>
                 `; // --- Здесь пишешь html код
                 content_div.onclick = function (e) {
                     e.preventDefault();
                 };
+                
 
                 let button_div = document.createElement("button");
                 button_div.innerHTML = "Закрыть";
