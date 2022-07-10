@@ -26,6 +26,8 @@ feedback.map(obj => {
     content_div.className = "popup-content";
     content_div.innerHTML = `
       <h1>${feedback.find(obj => obj.id == button.id).name}</h1>
+      <p>${feedback.find(obj => obj.id ==button.id).text}</p>
+      <img src =" ${feedback.find(obj =>obj.id ==button.id).pic}"/>
       
     `; // --- Здесь пишешь html код
     content_div.onclick = function (e) {
