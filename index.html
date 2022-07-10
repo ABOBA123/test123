@@ -152,13 +152,8 @@
             <div class="third-header">
                 <h1>Отзывы</h1>
             </div>
-            <div class="third-icons-row">
-                <button class="icon-namber-one"></button>
-                <button class="icon-namber-two"></button>
-                <button class="icon-namber-three"></button>
-                <button class="icon-namber-four"></button>
-            </div>
-            <div class="reaction">
+            <div id="feedback_row" class="third-icons-row"></div>
+            <!-- <div class="reaction">
                 <p class="men-one">
                     Спасибо<br />
                     сотрудникам за<br />
@@ -186,9 +181,10 @@
                     оперативность в<br />
                     решении вопросов.
                 </p>
-            </div>
+            </div> -->
         </div>
 
+        <script src="./script.js"></script>
         <script>
             const button = document.getElementById("button");
             const body = document.body;
@@ -220,10 +216,10 @@
                 content_div.onclick = function (e) {
                     e.preventDefault();
                 };
-                
 
                 let button_div = document.createElement("button");
                 button_div.innerHTML = "Закрыть";
+                button_div.className = "popup-button-close";
                 button_div.onclick = function () {
                     let obj = document.getElementById("popup-block");
                     obj.remove();
