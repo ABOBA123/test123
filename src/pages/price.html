@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- Глобальные стили -->
+        <link rel="stylesheet" href="../styles/global.css" />
+        <link rel="stylesheet" href="../styles/header.css" />
+        <!-- Глобальные стили -->
+
+        <!-- Локальные стили -->
+        <link rel="stylesheet" href="../styles/price.css" />
+        <!-- Локальные стили -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="content">
+            <div class="container d-flex flex-column mt-20">
+                <h1>Тест</h1>
+                <div class="w-100 d-flex flex-row ai-start">
+                    <button id="1" onclick="changeSlide(event)">1</button>
+                    <button id="2" onclick="changeSlide(event)">2</button>
+                    <button id="3" onclick="changeSlide(event)">3</button>
+                </div>
+                <div class="card-wide d-flex flex-column bg-pink">
+                    <h2 id="slide_header">Первый раздел</h2>
+                    <span id="slide_desc">Описание первого раздела</span>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+        </div>
+        <script src="../scripts/price.js"></script>
+    </body>
+</html>
