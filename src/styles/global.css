@@ -5,18 +5,13 @@ body {
     padding: 0;
     box-sizing: border-box;
 
-    background: black;
+    background: rgb(0, 0, 0);
 }
 
 h1 {
     font-size: 72px;
     color: #ffffff;
     font-weight: 700;
-}
-
-h2 {
-    font-size: 36px;
-    font-weight: 500;
 }
 
 .container {
@@ -30,7 +25,6 @@ h2 {
 
 .card-wide {
     width: 968px;
-    min-height: 460px;
 }
 
 .d-flex {
@@ -40,7 +34,7 @@ h2 {
 .flex-column {
     flex-direction: column;
 }
-.all-input {
+.all-input{
     width: 900px;
     height: 60px;
 
@@ -54,30 +48,32 @@ h2 {
     font-weight: 700;
     font-size: 48px;
     line-height: 54px;
+    
 
     background-color: #db8689;
 }
-.lap {
+.lap{
     width: 100px;
     height: 100px;
-    border: 5px white solid;
-    border-radius: 50%;
+    border: 5px white solid ;
+    border-radius: 50%; 
 
     margin: auto;
+
 }
-.icon {
+.icon{
     width: 200px;
     height: 200px;
 
     background: none;
     border: 5px white solid;
     border-radius: 30%;
-    margin: auto;
+
 }
 .flex-row {
     flex-direction: row;
 }
-.bord {
+.bord{
     border: 5px white solid;
     border-radius: 30%;
 }
@@ -104,10 +100,10 @@ h2 {
 .bg-blue {
     background: blue;
 }
-.bg-green {
+.bg-green{
     background: green;
 }
-.bg-pink {
+.bg-pink{
     background-color: pink;
 }
 
@@ -121,8 +117,4 @@ h2 {
 
 .w-90 {
     width: 90%;
-}
-
-.mt-20 {
-    margin-top: 20px;
 }
