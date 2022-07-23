@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            .completed {
+                text-decoration: line-through;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ToDo App</h1>
+
+        <input id="title" />
+        <button onclick="createList()">Создать</button>
+
+        <ul id="todoList"></ul>
+
+        <script>
+            const title = document.getElementById("title");
+            const todoList = document.getElementById("todoList");
+
+            function createList() {
+                // --- проверить на пустоту инпут
+                let li = document.createElement("li");
+
+                li.innerText = title.value;
+
+                let button = document.createElement("button");
+                button.innerHTML = "Удалить";
+                button.onclick = function (e) {
+                    alert("Удалить"); // --- https://metanit.com/web/javascript/8.5.php (Удаление элемента)
+                };
+                li.appendChild(button);
+
+                li.onclick = function (e) {
+                    if (e.path[0].className === "completed") {
+                        e.path[0].className = "";
+                    } else {
+                        e.path[0].className = "completed";
+                    }
+                };
+
+                todoList.appendChild(li);
+
+                title.value = ""; // --- После всех манипуляций, очищаем инпут для создания новых задач
+            }
+        </script>
+    </body>
+</html>
